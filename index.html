@@ -39,8 +39,8 @@
   .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;letter-spacing:-.2px;color:var(--ink)}
   .logo .mark{width:30px;height:30px;flex:0 0 auto}
   .nav-links{display:flex;align-items:center;gap:26px}
-  .nav-links a{color:var(--muted);font-weight:500;font-size:15px}
-  .nav-links a:hover{color:var(--ink)}
+  .nav-links a:not(.btn){color:var(--muted);font-weight:500;font-size:15px}
+  .nav-links a:not(.btn):hover{color:var(--ink)}
   .nav-links .btn{padding:9px 16px;font-size:14px}
   @media(max-width:720px){.nav-links a:not(.btn){display:none}}
 
