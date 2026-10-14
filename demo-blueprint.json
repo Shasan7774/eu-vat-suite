@@ -1,9 +1,5 @@
 {
   "$schema": "https://playground.wordpress.net/blueprint-schema.json",
-  "meta": {
-    "title": "Keystep EU VAT Suite — live demo",
-    "description": "Boots WordPress + WooCommerce + Keystep EU VAT Suite (free) for a hands-on test."
-  },
   "landingPage": "/wp-admin/admin.php?page=wc-settings&tab=tax&section=euvs",
   "login": true,
   "features": { "networking": true },
