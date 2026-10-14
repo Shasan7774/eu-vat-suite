@@ -1,0 +1,23 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/wp-admin/admin.php?page=wc-settings&tab=tax&section=euvs",
+  "login": true,
+  "features": { "networking": true },
+  "preferredVersions": { "php": "8.3", "wp": "latest" },
+  "steps": [
+    {
+      "step": "installPlugin",
+      "pluginData": { "resource": "wordpress.org/plugins", "slug": "woocommerce" },
+      "options": { "activate": true }
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": { "resource": "wordpress.org/plugins", "slug": "keystep-eu-vat-suite" },
+      "options": { "activate": true }
+    },
+    {
+      "step": "setSiteOptions",
+      "options": { "woocommerce_calc_taxes": "yes" }
+    }
+  ]
+}
