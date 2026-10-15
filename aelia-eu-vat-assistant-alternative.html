@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EU VAT Assistant reached end of life — what WooCommerce stores should do next</title>
+<meta name="description" content="Aelia's EU VAT Assistant for WooCommerce reached end of life on 30 June 2022 and is no longer maintained or supported. Here is what that means for your store, and a free, maintained alternative.">
+<link rel="canonical" href="https://shasan7774.github.io/eu-vat-suite/aelia-eu-vat-assistant-alternative.html">
+<style>
+  :root{
+    --brand:#7f54b3; --brand-dark:#5a3a84; --ink:#1b1f2a; --muted:#5b6475;
+    --line:#e7e9f0; --bg:#ffffff; --soft:#f6f5fb; --ok:#1f9d55; --warn:#b45309;
+    --radius:14px; --maxw:860px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased}
+  a{color:var(--brand);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+  .btn{display:inline-block;padding:13px 22px;border-radius:10px;font-weight:600;font-size:15px;
+    cursor:pointer;border:1px solid transparent}
+  .btn-primary{background:var(--brand);color:#fff;box-shadow:0 6px 18px rgba(127,84,179,.28)}
+  .btn-primary:hover{background:var(--brand-dark);text-decoration:none}
+  .btn-ghost{background:#fff;color:var(--ink);border-color:var(--line)}
+  .btn-ghost:hover{border-color:var(--brand);color:var(--brand);text-decoration:none}
+  header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:66px;max-width:1080px;margin:0 auto;padding:0 20px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;color:var(--ink)}
+  .logo .mark{width:30px;height:30px;flex:0 0 auto}
+  h1{font-size:34px;line-height:1.2;letter-spacing:-.5px;margin:36px 0 10px}
+  h2{font-size:23px;margin:38px 0 12px;letter-spacing:-.2px}
+  h3{font-size:17px;margin:26px 0 8px}
+  .lede{font-size:18px;color:var(--muted);margin:0 0 8px}
+  .meta{font-size:13px;color:var(--muted);margin-bottom:28px}
+  blockquote{margin:18px 0;padding:16px 20px;background:var(--soft);border-left:4px solid var(--brand);
+    border-radius:0 8px 8px 0;font-size:16px}
+  blockquote cite{display:block;margin-top:8px;font-size:13px;color:var(--muted);font-style:normal}
+  .callout{border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin:24px 0;background:#fff}
+  .callout.warn{border-color:#fde68a;background:#fffbeb}
+  .callout h3{margin-top:0}
+  table{width:100%;border-collapse:collapse;margin:18px 0;font-size:15px}
+  th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-weight:700;background:var(--soft)}
+  ul,ol{padding-left:22px}
+  li{margin:7px 0}
+  .steps{counter-reset:step;list-style:none;padding:0}
+  .steps li{counter-increment:step;position:relative;padding-left:44px;margin:18px 0}
+  .steps li::before{content:counter(step);position:absolute;left:0;top:0;width:30px;height:30px;
+    border-radius:50%;background:var(--brand);color:#fff;display:flex;align-items:center;
+    justify-content:center;font-weight:700;font-size:14px}
+  .cta{text-align:center;padding:34px 20px;background:var(--soft);border-radius:var(--radius);margin:40px 0}
+  .cta p{color:var(--muted);margin:10px 0 20px}
+  footer{border-top:1px solid var(--line);margin-top:52px;padding:26px 0;font-size:13px;color:var(--muted)}
+  .disclaim{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:18px;margin-top:34px}
+  @media(max-width:620px){h1{font-size:27px}.nav-links{display:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="./">
+      <svg class="mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="48" height="48" rx="11" fill="#7f54b3"/>
+        <path d="M24 9l12 4.5v8.2c0 7.6-5.1 13.1-12 15.3-6.9-2.2-12-7.7-12-15.3V13.5L24 9z" fill="#fff" fill-opacity="0.14" stroke="#fff" stroke-width="1.6"/>
+        <text x="24" y="30" font-family="Segoe UI,Arial" font-size="17" font-weight="700" fill="#fff" text-anchor="middle">€</text>
+      </svg>
+      Keystep EU VAT Suite
+    </a>
+    <nav class="nav-links">
+      <a class="btn btn-ghost" href="https://wordpress.org/plugins/keystep-eu-vat-suite" target="_blank" rel="noopener">Get the free plugin</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+<h1>EU VAT Assistant reached end of life. What should your store do?</h1>
+<p class="lede">If your WooCommerce store relies on Aelia's EU VAT Assistant, it is running on a plugin its own authors stopped maintaining in 2022. Here is what that actually means — and what your options are.</p>
+<p class="meta">Last updated 15 October 2026</p>
+
+<h2>The facts, from the authors themselves</h2>
+
+<p>This is not speculation or a competitor's claim. It is stated plainly on the plugin's own WordPress.org listing:</p>
+
+<blockquote>
+  “The EU VAT Assistant reached its end of life on the 30th of June 2022. The plugin is still functional and it can be used, but it's no longer maintained or supported.”
+  <cite>— EU VAT Assistant for WooCommerce, <a href="https://wordpress.org/plugins/woocommerce-eu-vat-assistant/" target="_blank" rel="noopener">wordpress.org listing</a></cite>
+</blockquote>
+
+<p>The listing goes on to say it is being kept available “as a courtesy to existing users who have developers who can take care of its maintenance and troubleshooting.”</p>
+
+<div class="callout">
+  <h3>To be fair to it: it was a good plugin</h3>
+  <p style="margin-bottom:0">EU VAT Assistant has 5,000+ active installations and a 5-star rating from its users. Nobody is suggesting it was badly built — people clearly liked it. The problem is not quality. The problem is that <strong>nobody is maintaining it</strong>, and EU VAT rules do not stand still.</p>
+</div>
+
+<h2>Why “still works” is not the same as “fine”</h2>
+
+<p>An unmaintained VAT plugin carries three kinds of risk, and none of them announce themselves in advance:</p>
+
+<ul>
+  <li><strong>Rule drift.</strong> EU VAT rates and rules change. A plugin nobody updates will quietly fall behind, and you will not get a warning — you will get a wrong invoice.</li>
+  <li><strong>Platform drift.</strong> WordPress and WooCommerce keep moving. Block-based checkout in particular has changed substantially. Compatibility that holds today may not survive the next major release.</li>
+  <li><strong>No support when it matters.</strong> VAT problems tend to surface at the worst possible time — at checkout, or during an audit. “No longer supported” means there is nobody to ask.</li>
+</ul>
+
+<div class="callout warn">
+  <h3>This is not an emergency</h3>
+  <p style="margin-bottom:0">If your store is working today, nothing is on fire. You do not need to rip anything out this afternoon. But this <em>is</em> a known, dated liability sitting in your checkout, and it is worth handling on your schedule rather than on the schedule of whichever WooCommerce release finally breaks it.</p>
+</div>
+
+<h2>Your options</h2>
+
+<table>
+  <tr><th>Option</th><th>What it means</th></tr>
+  <tr>
+    <td><strong>Keep it, maintain it yourself</strong></td>
+    <td>Viable if you have a developer who can own it. That is explicitly what the authors suggest. Budget for it as ongoing work, not a one-off fix.</td>
+  </tr>
+  <tr>
+    <td><strong>Move to a maintained plugin</strong></td>
+    <td>Several EU VAT plugins for WooCommerce are actively maintained, including commercial ones. Compare them on what your store actually needs.</td>
+  </tr>
+  <tr>
+    <td><strong>Move to a full tax service</strong></td>
+    <td>Heavier and more expensive, but takes the whole problem off your plate. Usually over-specified for a smaller store.</td>
+  </tr>
+</table>
+
+<h2>What Keystep EU VAT Suite covers</h2>
+
+<p>We built this because the same gaps kept showing up. Rather than list what any other plugin does or does not do — we are not in a position to describe someone else's product accurately — here is plainly what ours handles, so you can check it against your own requirements:</p>
+
+<table>
+  <tr><th>Capability</th><th>Tier</th></tr>
+  <tr><td>Correct <strong>destination VAT rates</strong> for all 27 EU member states, applied at checkout</td><td>Free</td></tr>
+  <tr><td><strong>VIES validation</strong> of EU VAT numbers, with <strong>a safe fallback so checkout does not break when VIES is unavailable</strong></td><td>Free</td></tr>
+  <tr><td><strong>B2B reverse-charge</strong> applied correctly — cross-border only, not domestic</td><td>Free</td></tr>
+  <tr><td>VAT number field on <strong>both block and classic checkout</strong></td><td>Free</td></tr>
+  <tr><td>Orders placed while VIES was down are <strong>flagged for review</strong> rather than silently mis-taxed</td><td>Free</td></tr>
+  <tr><td><strong>OSS return reporting</strong> — cross-border B2C only, as the return requires</td><td>Pro</td></tr>
+  <tr><td><strong>€10,000 threshold tracker</strong></td><td>Pro</td></tr>
+  <tr><td><strong>Audit CSV export</strong></td><td>Pro</td></tr>
+</table>
+
+<h3>The VIES problem specifically</h3>
+
+<p>VIES is not one service — it is 27 national systems behind a shared interface, and individual countries go down or throttle under load. A naive integration turns that into a broken checkout or, worse, a B2B order that silently gets charged VAT it should not have been.</p>
+<p>Keystep caches aggressively, retries sensibly, marks the service as down rather than hammering it, and — critically — <strong>never breaks checkout</strong>. When VIES cannot confirm a number, the order proceeds with destination VAT charged and is flagged for your review, so you can refund rather than lose the sale.</p>
+
+<h3>What it does not do</h3>
+
+<p>Being straight about the boundaries, because discovering these after switching would be worse:</p>
+<ul>
+  <li><strong>It is EU-focused.</strong> No US sales tax, no UK-specific post-Brexit handling beyond standard non-EU treatment.</li>
+  <li><strong>Reduced-rate products use WooCommerce's own tax classes.</strong> We ship verified standard rates; reduced rates vary by product and country, so you configure those — we will not ship numbers we have not verified.</li>
+  <li><strong>It does not file your returns.</strong> It produces the figures; filing is yours or your accountant's.</li>
+  <li><strong>It is new.</strong> Published October 2026. Fewer installs and less battle-testing than something that has been around for years. That is a real consideration and you should weigh it.</li>
+</ul>
+
+<h2>How to switch, carefully</h2>
+
+<ol class="steps">
+  <li><strong>Do not uninstall anything yet.</strong> Start on a staging copy of your store. VAT configuration is not something to experiment with on live orders.</li>
+  <li><strong>Write down your current setup.</strong> Which rates apply where, how reverse-charge is configured, what your VAT number field is called, and any reports you rely on.</li>
+  <li><strong>Install the free plugin</strong> on staging from <a href="https://wordpress.org/plugins/keystep-eu-vat-suite" target="_blank" rel="noopener">WordPress.org</a>. It will offer to sync verified EU standard rates into WooCommerce's tax tables, and it will skip rates you have already configured rather than overwriting your work.</li>
+  <li><strong>Test the three cases that matter:</strong> a B2C order to another EU country (destination VAT), a B2B order with a valid EU VAT number (reverse charge, zero VAT), and a B2B order with an invalid or unverifiable number (VAT charged, flagged for review).</li>
+  <li><strong>Check your reduced-rate products.</strong> These use WooCommerce tax classes and need configuring for your catalogue.</li>
+  <li><strong>Only then go live</strong>, and watch the first day of real orders before deactivating anything else.</li>
+</ol>
+
+<div class="cta">
+  <h3 style="margin-top:0">The core plugin is free, with no feature-gating</h3>
+  <p>Correct rates, VIES validation and reverse-charge are all in the free version. Pro exists for stores that cross the €10,000 threshold and need OSS reporting.</p>
+  <a class="btn btn-primary" href="https://wordpress.org/plugins/keystep-eu-vat-suite" target="_blank" rel="noopener">Get the free plugin</a>
+  <a class="btn btn-ghost" href="./" style="margin-left:8px">See all features &amp; pricing</a>
+</div>
+
+<h2>Common questions</h2>
+
+<h3>Is EU VAT Assistant actually broken?</h3>
+<p>No. By its authors' own description it “is still functional and it can be used”. The issue is that it is unmaintained and unsupported, so future breakage will not be fixed.</p>
+
+<h3>Do I have to switch right now?</h3>
+<p>No. Plan it rather than rush it. The risk is cumulative, not immediate.</p>
+
+<h3>Will switching change my existing orders?</h3>
+<p>No. Tax is calculated at the time an order is placed. Historical orders keep the VAT they were charged.</p>
+
+<h3>Can I run both at once?</h3>
+<p>Not advisable. Two plugins both calculating VAT will conflict. Test on staging, then switch.</p>
+
+<p class="disclaim">
+  <strong>Disclaimer.</strong> Keystep Labs is not affiliated with, endorsed by, or connected to Aelia or the authors of EU VAT Assistant. Product names are referenced only to identify the products discussed and remain the property of their respective owners. The end-of-life statement quoted above is reproduced from the plugin's public WordPress.org listing and was accurate as of 15 October 2026 — please verify it yourself at the source.
+  <br><br>
+  This page is general information about software, not tax or legal advice. EU VAT obligations depend on your specific circumstances. Consult a qualified tax adviser for your own situation.
+</p>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    Keystep EU VAT Suite is a product of <strong>Keystep Labs</strong> · Payments &amp; licensing by Lemon Squeezy · © 2026 Keystep Labs. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
