@@ -1,0 +1,5 @@
+{
+  "version": "0.1.1",
+  "url": "https://app.lemonsqueezy.com/my-orders",
+  "notes": "Licensing hardening: daily license re-check (lapsed subscriptions re-lock Pro), activation-limit enforcement, in-dashboard update notifications, and the dev-only unlock constant is no longer honoured in production."
+}
